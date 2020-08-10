@@ -3,7 +3,7 @@
     <h1>List ToDo's</h1>
     <div class="row">
       <div class="input-field col s6">
-        <select style="display:block" ref="select" v-model="filter">
+        <select ref="select" v-model="filter">
           <option value="all" selected>All Todo's</option>
           <option value="active">Active Todo's</option>
           <option value="completed">Completed Todo's</option>
@@ -46,6 +46,7 @@
 </template>
 
 <script>
+import M from "materialize-css";
 export default {
   data: () => ({
     filter: "all",
